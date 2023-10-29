@@ -1,0 +1,35 @@
+{#<!doctype html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#     {% load static %}#}
+{#    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">#}
+{#    <meta charset="UTF-8">#}
+{#    <meta name="viewport"#}
+{#          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">#}
+{#    <meta http-equiv="X-UA-Compatible" content="ie=edge">#}
+{#    <title>Gallery</title>#}
+{#</head>#}
+{#<body>#}
+{#<button type="button" class="btn btn-secondary"><a href="{% url 'homepage' %}">Home</a></button>#}
+{#<button type="button" class="btn btn-info"><a href="{% url 'kuhusu' %}">About</a></button>#}
+{#<button type="button" class="btn btn-outline-primary"><a href="{% url 'picha' %}">gallery</a></button>#}
+{#<div class="container-fluid p-3 bg-dark-subtle text-center mt-2">#}
+{#    <h2>This is my Gallery page</h2>#}
+{#</div>#}
+{#<h2>This is my Gallery page</h2>#}
+{#<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>#}
+{#</body>#}
+{#</html>#}
+
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block body %}
+    <title>Gallery</title>
+    <h2>This is my Pichaz</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto autem cupiditate ducimus eos fuga incidunt ipsa ipsam neque officiis perferendis possimus praesentium, quae quaerat ratione repellat reprehenderit tempora, tenetur?</p>
+    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis culpa dolore doloremque, eligendi esse eveniet ipsum laudantium magni minima nobis odio pariatur, porro quae quasi quidem sequi sit, veritatis voluptates?</span><span>Accusamus aliquam architecto at aut commodi consectetur cum cupiditate delectus, dolorem dolorum et labore molestias mollitia officiis praesentium quaerat quod rem sequi similique tempora. Cumque molestiae molestias nam nostrum sint.</span><span>Ab accusantium consequatur illum nam odio repellat sapiente sed ut? Animi atque consequuntur cupiditate deleniti distinctio doloribus enim est expedita, fugit hic libero, magnam nostrum nulla perferendis provident quas sunt.</span><span>Asperiores aspernatur assumenda autem consequuntur cumque delectus dicta dolore esse et exercitationem fugit magnam molestiae nesciunt nostrum odit officia omnis optio, perferendis quidem ratione sunt tenetur veniam voluptate voluptates voluptatibus.</span><span>Accusamus error expedita explicabo ipsa minima nam odit veritatis. Aspernatur blanditiis dignissimos eveniet facilis, inventore minus nemo praesentium, reiciendis sapiente sequi tempora veritatis vero. Aspernatur consectetur fuga illo maxime tempora.</span><span>A alias cumque deserunt, dolore dolorum eaque enim error facere facilis harum libero modi necessitatibus provident quae quaerat quis reiciendis rem, repellendus sit tempora temporibus ullam unde ut. Earum, natus?</span><span>At distinctio dolorum enim, ex facere laboriosam minima molestias, mollitia nobis, provident quod reiciendis tempora. Ad exercitationem iure qui quia quis, rem repellendus saepe voluptatum. Amet ducimus incidunt quasi veniam.</span></p>
+
+
+{% endblock %}

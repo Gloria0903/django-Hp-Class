@@ -1,0 +1,51 @@
+{#<!doctype html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    {% load static %}#}
+{#    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">#}
+{#    <meta charset="UTF-8">#}
+{#    <meta name="viewport"#}
+{#          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">#}
+{#    <meta http-equiv="X-UA-Compatible" content="ie=edge">#}
+{#    <title>Home</title>#}
+{#</head>#}
+{#<body>#}
+{#<button type="button" class="btn btn-secondary"><a href="{% url 'homepage' %}">Home</a></button>#}
+{#<button type="button" class="btn btn-info"><a href="{% url 'kuhusu' %}">About</a></button>#}
+{#<button type="button" class="btn btn-outline-primary"><a href="{% url 'picha' %}">gallery</a></button>#}
+{#<div class="container-fluid p-5 bg-success text-center mt-4">#}
+{#    <h2>Welcome to Django Web Framework</h2>#}
+{#</div>#}
+{##}
+{#<a href="about.html">About</a> ankatag not working in django#}
+{#<h2>Welcome to Django Web Framework</h2>#}
+{##}
+{#<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>#}
+{#</body>#}
+{#</html>#}
+
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block body %}
+ <title>Home</title>
+    <div class="container">
+    <div class="row">
+        <div class="col-6">
+            <img src="{% static 'images/heeh.jpg' %}" alt="">
+            <h2>Our Story</h2>
+            <p>They say its mostly darkest before dawn and that is my driving force. I believe good things are bound to come eventually and in God's timing. It might seem like all is lost but keep your trust in Him for he never fails. Right! Might seem like He's forgotten about you but it's all good for God never forgets his kidos. That should be your word of motivation for today and every other day.</p>
+        </div>
+        <div>
+            <div class="col-6">
+                <img src="{% static 'images/butter.jpg' %}" alt="">
+                <h2>Keep the connection going</h2>
+                <p>Twende tukiuke. Mazee mnisaidie words za kuandika. I am a first typer yoh. Finally i get to have a purpose for living. Yet everyday is a learning day as technology keeps evolving day by day and its almost like crazy. You have to keep up with whats trending like the fact that Amber ray and the rich husband Rapudo broke up and one of my fave couples that is Kate Actress and Phil Director divorced ,,its quite sad but ni life.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+ {% endblock %}
